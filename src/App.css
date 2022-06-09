@@ -1,4 +1,208 @@
-.App {
+
+
+.Backgroung{
+  background: linear-gradient(#22262A, #19342D);
+  display: flex;
+  justify-content:space-between;  
+  height: 800px;
+}
+
+.Profile{
+  border-radius: 10%;
+  background: linear-gradient(#19342D,#22262A);
+  margin-left: 80px;
+  /* margin-left: 65px; */
+  margin-top: 80px;
+  /* margin-right: 40px; */
+  /* width: 15%; */
+  color:#E9EAEC ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 
+.Profile-image{
+  margin-left: 50px;
+} */
+
+.Profile-image{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4{
+  margin-top: 0%;
+  font-family: cursive;  
+}
+.Photo-profile{
+  width: 150px;
+  height: 200px;
+  border-radius: 30%;
+  margin-bottom: 0%;
+}
+
+.Profissao{
+  margin-top: 0%;
+  font-size:small;
+  color:#FEDA15 ;
+}
+
+.Profissao:hover{
+  color: greenyellow;
+  font-style:unset;
+}
+
+
+.Profile-contact{
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Redes{
+  /* margin-top: 20px; */
+  width: 25px;
+  opacity: 70%;
+}
+
+.Redes:hover{
+  opacity: 100%;
+  width: 32px;
+
+}
+
+.Certificate{
+  border-radius: 40%;
+  width: 80px;
+  position:relative;
+  margin-top: 80px;
+  margin-left: 32%;
+  opacity: 60%;
+}
+
+.Certificate:hover{
+  /* transform: rotateY(360deg); */
+  opacity: 100%;
+  transition: 1.2s;
+}
+
+.CertificateSize{
+  width: 150px;
+  transition: 1.3s;
+}
+.CertificateSize:hover{
+  width: 160px;
+}
+
+
+
+.Content{
+  margin-top: 50px;
+  width: 80%; 
+}
+
+.Content-principal{
+  border-radius: 20px;
+  background: linear-gradient(#19342D,#BFD0DA);
+  opacity: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 600px;
+}
+
+.Content-left{ 
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  /* border: solid 2px rgb(43, 168, 226);  */
+  width: 10%;
+  /* display: grid; */
+  color: #fff;
+}
+.Folder{
+  height: 50px;
+  /* margin: 20px 20px; */
+  /* border: solid 2px rgb(43, 168, 226); */
+  /* background-color: #F1DAAD;
+  color: #814827;
+  height: 100px; */
+}
+.Folder:hover{
+  height: 60px;
+}
+
+.Content-dynamic{
+  margin: 30px 50px 30px;
+  width: 85%;
+  color: #fff;
+  background-color: #000;
+  overflow-y:scroll;
+  opacity:initial;
+
+  
+}
+.Header{
+  position:static fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 30px;
+  color: #000;
+}
+.CmdIcon, .Header_text{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  width: 20px;
+}
+
+.Rotas{
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 40px 40px;
+}
+
+
+
+/* .Content-botton{
+  /* background-color: #080D10; */
+  /* height: 150px; */
+
+
+.List{
+  margin-left: 18%;
+  /* border: solid 2px rgb(43, 168, 226); */
+  /* background-color: #F1DAAD; */
+  color: #814827;
+  height: 100px;
+}
+
+.Skills{
+  margin: 20px 20px;
+  /* border: solid 2px rgb(43, 168, 226); */
+  background-color: #F1DAAD;
+  color: #814827;
+  height: 60px;
+}
+
+.Skills:hover{
+  margin-top: 0%;
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -14,7 +218,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +238,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
