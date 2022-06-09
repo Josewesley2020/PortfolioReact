@@ -24,6 +24,7 @@ function App() {
 
 
 
+
   
 
   return (
@@ -63,8 +64,6 @@ function App() {
                     <img src={Folder} alt="cade a imagem" className='Folder'/>
                     <p>Nome da pasta</p>
 
-                    <img src={Folder} alt="cade a imagem" className='Folder'/>
-                    <p>Nome da pasta</p>
                   </div>
 
                   <div className='Content-dynamic'> 
@@ -92,6 +91,7 @@ function App() {
         </BrowserRouter>
       </div>
     </div>
+    
   );
 }
 

@@ -4,14 +4,15 @@
   width: 99.9%;
   background: linear-gradient(#22262A, #19342D);
   display: flex;
-  justify-content:space-between;  
+  justify-content:space-between; 
+  font-size: 12px; 
 }
 
 /* Div a Esquerda */
 .Profile{
   border-radius: 10%;
   background: linear-gradient(#BFD0DA,#22262A,#19342D);
-  margin-left: 15px;
+  margin-left: 60px;
   margin-top: 50px;
   color:#E9EAEC ;
   display: flex;
@@ -70,7 +71,7 @@ h4{
 .Certificate{
   width: 80px;
   margin-top: 40px;
-  margin-left: 15px;
+  margin-left: 60px;
   opacity: 60%;
 }
 
@@ -100,14 +101,15 @@ h4{
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: 500px;
+  height: 450px;
 }
 
 .Content-left{ 
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 10%;
   color: #fff;
+  font-style: small;
 }
 .Folder {
   margin-top: 0%;
@@ -147,7 +149,7 @@ h4{
   margin-top: 10px;
   margin-bottom: 2px;
   margin-right: 2px;
-  width: 20px;
+  width: 10px;
 }
 
 .Rotas{
@@ -156,7 +158,7 @@ h4{
 }
 
 .List{
-  height: 230px;
+  height: 128px;
 }
 
 .Skills{
