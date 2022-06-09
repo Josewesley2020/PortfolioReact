@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className='Backgroung Dropzone'>
-
+      {/* Essa DIV é o conteudo do lado esquerdo da tela */}
       <div>
         <div className='Profile'>
             <div className='Profile-image'> 
@@ -45,11 +45,11 @@ function App() {
                 <div><img src={YouTube} alt="YouTube" className='Redes'/></div> */}
             </div>
         </div>
-        <div className='Certificate Draggable' id='Draggable-1'>
+        <div className='Certificate Draggable'>
           <img src={Certificate} alt="" className='CertificateSize'/>
         </div>
       </div>
-
+      {/* Essa DIV é o conteudo do lado direito da tela */}
       <div className='Content'>
         <BrowserRouter>
               <div className='Content-principal'>
@@ -80,30 +80,17 @@ function App() {
                     </div>
                   </div>
               </div>
-          <div className='Content-botton'> 
-              <div className='List'>
-                {/* <Link to='/html'>pres</Link> */}
+              <div className='Content-botton'> 
+                <div className='List'>
   
-                <Link to='/html'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
-                <Link to='/Css3'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
-                <Link to='/html'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
-                
-                
-                
-                <img src={Skill} alt="cade  imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
-
-              </div>
+                  <Link to='/html'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
+                  <Link to='/Css3'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
+                  <Link to='/html'><img src={Skill} alt="cade a imagem" className='Skills'/></Link>
+        
+                </div>
           </div>
         </BrowserRouter>
-        </div>
+      </div>
     </div>
   );
 }
