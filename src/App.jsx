@@ -90,7 +90,7 @@ function App() {
                 
                 
                 
-                <img src={Skill} alt="cade a imagem" className='Skills'/>
+                <img src={Skill} alt="cade  imagem" className='Skills'/>
                 <img src={Skill} alt="cade a imagem" className='Skills'/>
                 <img src={Skill} alt="cade a imagem" className='Skills'/>
                 <img src={Skill} alt="cade a imagem" className='Skills'/>
