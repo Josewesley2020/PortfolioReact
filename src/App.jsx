@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import X from './assets/x.gif'
+import X from './assets/X.png';
 import Certificate from './assets/DP900.png';
 import Profile from './assets/Mask group.png';
 import Skill  from './assets/html.png';
