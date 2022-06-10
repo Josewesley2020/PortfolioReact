@@ -1,0 +1,11 @@
+.HeaderModal{
+    margin: auto;
+    background-image: url(../assets/headerModal.JPG);
+    width: 100%;
+    height: 36px;
+}
+
+.ImageHeader{
+    max-height: 0px;
+    border: solid 2px rgb(98, 0, 255);
+}

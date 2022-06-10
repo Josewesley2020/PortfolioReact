@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import X from './assets/x.gif'
 import Certificate from './assets/DP900.png';
 import Profile from './assets/Mask group.png';
 import Skill  from './assets/html.png';
@@ -13,10 +14,44 @@ import Html from './components/Skills-Html'
 import Css3 from './components/Skills-Css3'
 import {  BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
+import Modal from 'react-modal';
+import { useState } from 'react';
+
+import Folder1 from './components/Folders/Folder1'
+
+// import InterfaceModal from '../src/components/InterfaceModal'
+
+
+Modal.setAppElement('#root');
 
 
 function App() {
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  const customStyles = {
+    content: {
+      width: '55%',
+      height: '70%',
+      top: '40%',
+      left: '65%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      opacity: '100%',
+      backgroundColor: '#fff',
+      boxShadow: '0px 0px 10px #000',
+    }
+  }
   
 
   const Nome = "José Wesley";
@@ -28,7 +63,7 @@ function App() {
   
 
   return (
-    <div className='Backgroung Dropzone'>
+    <div className='Backgroung'>
       {/* Essa DIV é o conteudo do lado esquerdo da tela */}
       <div>
         <div className='Profile'>
@@ -43,7 +78,7 @@ function App() {
                 <a href='https://www.youtube.com/channel/UC7X0Kuz6UIOADKPlQ0TBFeg' target='_blank' rel="noopener noreferrer"><img src={YouTube} alt="YouTube" className='Redes'/></a>
                 {/* <div><img src={Linkedin} alt="Linkedin" className='Redes'/></div>
                 <div><img src={GitHub} alt="GitHub" className='Redes' /></div>
-                <div><img src={YouTube} alt="YouTube" className='Redes'/></div> */}
+              <div><img src={YouTube} alt="YouTube" className='Redes'/></div> */}
             </div>
         </div>
         <div className='Certificate Draggable'>
@@ -52,10 +87,21 @@ function App() {
       </div>
       {/* Essa DIV é o conteudo do lado direito da tela */}
       <div className='Content'>
+
+
+              {/* Conteudo das pastas  */}
+              <Modal isOpen={modalIsOpen}onRequestClose={closeModal}style={customStyles}>
+                <div className='HeaderModal'><img className='X' src={X} alt="iconeDeFechar"  onClick={closeModal}/></div>
+                
+                {/* <InterfaceModal> teste </InterfaceModal> */}
+                <Folder1/>
+              </Modal>
+
+
         <BrowserRouter>
               <div className='Content-principal'>
                   <div className='Content-left'>
-                    <img src={Folder} alt="cade a imagem" className='Folder'/>
+                    <img src={Folder} alt="cade a imagem" className='Folder Modal-button' onClick={openModal}  />
                     <p>Nome da pasta</p>
 
                     <img src={Folder} alt="cade a imagem" className='Folder'/>
